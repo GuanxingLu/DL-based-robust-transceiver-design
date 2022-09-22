@@ -39,7 +39,6 @@ rem = [f];
 
 while(abs(f-mem)>0.0001)
 %while(abs(f)>0.05)
-
 %while(t < 1000)
     mem = f;
     t = t+1;
@@ -52,9 +51,7 @@ while(abs(f-mem)>0.0001)
         end 
         tmp = tmp + sigma2*eye(N);
         u_ori(:,k) = eye(N)/tmp*H(:,:,k)*v(:,k);
-        %u(:,k) = u_ori(:,k)./abs(u_ori(:,k))./2;
         u(:,k) = u_ori(:,k)/norm(u_ori(:,k));
-        %u(:,k) = u_ori(:,k)./abs(u_ori(:,k))./2
     end
     
   
@@ -112,9 +109,6 @@ end
 lambda = real(lambda);
 
 r = (P0-ones(K,1)'/A*sigma2*ones(K,1))/(ones(K,1)'/A*ones(K,1));
-% if r<0
-%     y=1;
-% end
 %r = abs(r);
 r = real(r);
 
