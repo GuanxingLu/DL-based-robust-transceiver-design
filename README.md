@@ -1,5 +1,5 @@
 # DL-based-robust-transceiver-design
-The implementation of our paper Learning Low-Complexity Robust Transceiver for Massive MIMO Downlink with Enhanced Mobility
+The implementation of our paper *Learning Low-Complexity Robust Transceiver for Massive MIMO Downlink with Enhanced Mobility*
 
 Before running the code, you need to download the following toolbox:
 
